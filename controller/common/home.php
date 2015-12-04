@@ -18,7 +18,7 @@ class ControllerCommonHome extends Controller {
 		if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/common/home.tpl')) {
 			$this->response->setOutput($this->load->view($this->config->get('config_template') . '/common/home.tpl', $data));
 		} else {
-			$this->response->setOutput($this->load->view('/common/home.tpl', $data));
+			$this->response->setOutput($this->load->view('default/common/home.tpl', $data));
 		}
 	}
 }

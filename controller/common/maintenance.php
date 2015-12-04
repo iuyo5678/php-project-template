@@ -53,7 +53,7 @@ class ControllerCommonMaintenance extends Controller {
 		if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/common/maintenance.tpl')) {
 			$this->response->setOutput($this->load->view($this->config->get('config_template') . '/common/maintenance.tpl', $data));
 		} else {
-			$this->response->setOutput($this->load->view('common/maintenance.tpl', $data));
+			$this->response->setOutput($this->load->view('default/common/maintenance.tpl', $data));
 		}
 	}
 }

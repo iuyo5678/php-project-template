@@ -14,7 +14,7 @@ class ControllerCommonSearch extends Controller {
 		if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/common/search.tpl')) {
 			return $this->load->view($this->config->get('config_template') . '/common/search.tpl', $data);
 		} else {
-			return $this->load->view('common/search.tpl', $data);
+			return $this->load->view('default/common/search.tpl', $data);
 		}
 	}
 }
